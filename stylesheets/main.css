@@ -1,0 +1,332 @@
+/* STYLES FOR PAGE'S MAIN CONTENT */
+
+/* Button styles */
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button,
+.button:visited,
+.button:hover,
+.button:active,
+.button:focus {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: hsl(0, 0%, 0%);
+  cursor: pointer;
+  letter-spacing: 1px;
+  line-height: normal;
+  padding: 0;
+  text-decoration: none;
+  width: auto;
+}
+
+/* Tooltip styles */
+.tooltip {
+  background: hsl(0, 0%, 0%);
+  border-radius: 3px;
+  color: hsl(0, 0%, 100%);
+  display: none;
+  font-size: 0.8rem;
+  padding: 5px 9px;
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+/* Header background design styles */
+.background-design {
+  position: relative;
+}
+
+.background-design::before {
+  background: #077a97;
+  -webkit-box-shadow: 1px 1px 10px 0 hsl(0, 0%, 47%);
+  box-shadow: 1px 1px 10px 0 hsl(0, 0%, 47%);
+  content: "";
+  height: 55rem;
+  left: 0;
+  position: absolute;
+  top: -500px;
+  -webkit-transform: skewY(-8deg);
+  -ms-transform: skewY(-8deg);
+  transform: skewY(-8deg);
+  width: 100%;
+  z-index: -1;
+}
+
+/* About Section styles */
+.about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 30px;
+  padding: 60px 40px 40px;
+}
+
+.about-section .image-wrapper {
+  position: relative;
+}
+
+.about-section .image-wrapper img.avatar {
+  -webkit-box-shadow: 0 0 5px 0 hsl(0, 0%, 47%);
+  box-shadow: 0 0 5px 0 hsl(0, 0%, 47%);
+  max-width: 400px;
+  width: 100%;
+}
+
+.about-section .about-container {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.about-section .about-container .card {
+  background: hsl(0, 0%, 100%);
+  -webkit-box-shadow: 0 0 8px 0 hsl(0, 0%, 70%);
+  box-shadow: 0 0 8px 0 hsl(0, 0%, 70%);
+  max-width: 600px;
+  padding: 30px;
+  width: 100%;
+}
+
+.about-section .about-container .card .button-group.profile-links {
+  gap: 20px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.about-section .card .button-group.profile-links .profile-link,
+.about-section .card .button-group.profile-links .profile-link:visited,
+.about-section .card .button-group.profile-links .profile-link:hover,
+.about-section .card .button-group.profile-links .profile-link:active,
+.about-section .card .button-group.profile-links .profile-link:focus {
+  color: #077a97;
+  font-size: 2rem;
+  position: relative;
+}
+
+.about-section .card .button-group.profile-links .profile-link.github:hover {
+  color: hsl(0, 0%, 0%);
+}
+
+.about-section .card .button-group.profile-links .profile-link.linkedin:hover {
+  color: #0a66c2;
+}
+
+.about-section .card .button-group.profile-links .profile-link.bluesky:hover {
+  color: #0085ff;
+}
+
+.about-section .card .button-group.profile-links .profile-link .icon {
+  pointer-events: none;
+}
+
+.about-section .card .button-group.profile-links .profile-link:hover .tooltip {
+  display: block;
+  right: -20px;
+  top: 38px;
+}
+
+/* Projects Section styles */
+.projects-section {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 60px 40px;
+  width: 100%;
+}
+
+.projects-section .projects {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+}
+
+.projects-section .projects .project-tile {
+  background: hsl(0, 0%, 100%);
+  -webkit-box-shadow: 0 0 5px 0 hsl(0, 0%, 47%);
+  box-shadow: 0 0 5px 0 hsl(0, 0%, 47%);
+  max-width: 400px;
+  width: 100%;
+}
+
+.projects-section .projects .project-tile .project-content {
+  padding: 18px 18px 30px 18px;
+}
+
+.projects-section .projects .project-tile .project-content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.projects-section .projects .project-tile .project-content .button-group {
+  gap: 10px;
+}
+
+.projects-section .projects .project-tile .project-content .button,
+.projects-section .projects .project-tile .project-content .button:visited,
+.projects-section .projects .project-tile .project-content .button:hover,
+.projects-section .projects .project-tile .project-content .button:active,
+.projects-section .projects .project-tile .project-content .button:focus {
+  position: relative;
+}
+
+.projects-section .projects .project-tile .project-content .button:hover {
+  color: #077a97;
+}
+
+.projects-section .projects .project-tile .project-content .button .icon {
+  pointer-events: none;
+}
+
+.projects-section .projects .project-tile .project-content .button:hover .tooltip {
+  display: block;
+  right: -30px;
+  top: 30px;
+}
+
+/* Contact Section styles */
+.contact-section {
+  background: #077a97;
+  -webkit-box-shadow: 0 -1px 10px 0 hsl(0, 0%, 47%);
+  box-shadow: 0 -1px 10px 0 hsl(0, 0%, 47%);
+  color: hsl(0, 0%, 100%);
+  padding: 40px 40px 6rem;
+}
+
+.contact-section .content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 40px;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.contact-section .content-wrapper .contact-info {
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact-section .content-wrapper .contact-info .row {
+  padding-bottom: 24px;
+}
+
+.contact-section .content-wrapper .contact-info .row p {
+  margin: 0;
+}
+
+.contact-section .content-wrapper .contact-info .row .info.address {
+  line-height: 1.37;
+}
+
+.contact-section .content-wrapper .contact-info .row.contact .info {
+  padding-bottom: 8px;
+}
+
+.contact-section .content-wrapper .contact-info .info address a,
+.contact-section .content-wrapper .contact-info .info address a:visited,
+.contact-section .content-wrapper .contact-info .info address a:hover,
+.contact-section .content-wrapper .contact-info .info address a:active,
+.contact-section .content-wrapper .contact-info .info address a:focus {
+  color: hsl(0, 0%, 100%);
+}
+
+.contact-section .content-wrapper .contact-info .button-group.profile-links {
+  gap: 25px;
+}
+
+.contact-section .content-wrapper .contact-info .button-group.profile-links .profile-link,
+.contact-section .content-wrapper .contact-info .button-group.profile-links .profile-link:visited,
+.contact-section .content-wrapper .contact-info .button-group.profile-links .profile-link:hover,
+.contact-section .content-wrapper .contact-info .button-group.profile-links .profile-link:active,
+.contact-section .content-wrapper .contact-info .button-group.profile-links .profile-link:focus {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.contact-section .content-wrapper .contact-info .button-group.profile-links .profile-link:hover {
+  color: hsl(0, 0%, 85%);
+}
+
+.contact-section .content-wrapper .contact-info .button-group.profile-links .profile-link .icon {
+  pointer-events: none;
+}
+
+.contact-section .content-wrapper .contact-info .button-group.profile-links .profile-link:hover .tooltip {
+  display: block;
+  right: -15px;
+  top: 48px;
+}
+
+.contact-section .content-wrapper img.contact-img {
+  -webkit-box-shadow: 0 0 5px 0 hsl(0, 0%, 47%);
+  box-shadow: 0 0 5px 0 hsl(0, 0%, 47%);
+  max-width: 450px;
+  width: 100%;
+}
+
+@media all and (min-width: 705px) {
+  .projects-section .projects {
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media all and (min-width: 860px) {
+  .contact-section .content-wrapper {
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media all and (min-width: 1035px) {
+  .about-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .about-section .image-wrapper {
+    margin-right: -15px;
+    z-index: 1;
+  }
+
+  .about-section .about-container .card {
+    padding: 30px 30px 30px 45px;
+  }
+
+  .projects-section .projects {
+    -ms-grid-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
+  }
+}

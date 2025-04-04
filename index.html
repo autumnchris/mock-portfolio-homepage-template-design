@@ -15,13 +15,15 @@
     <!-- HEADER -->
     <header>
       <div class="background-design">
-        <h1>Jane Doe</h1>
         <!-- ABOUT SECTION -->
         <section class="about-section">
           <!-- ABOUT IMAGE -->
-          <figure>
-            <img src="assets/images/avatar-placeholder-image.png" alt="Placeholder image for a photograph of Jane Doe" class="avatar" />
-          </figure>
+          <div class="image-wrapper">
+            <figure>
+              <img src="assets/images/avatar-placeholder-image.png" alt="Placeholder image for a photograph of Jane Doe" class="avatar" />
+            </figure>
+            <h1>Jane Doe</h1>
+          </div>
           <div class="about-container">
             <!-- ABOUT DESCRIPTION -->
             <div class="card">
@@ -175,51 +177,54 @@
       </section>
       <!-- CONTACT SECTION -->
       <section class="contact-section">
-        <!-- CONTACT INFO -->
-        <div class="contact-content">
-          <h2>Contact me</h2>
-          <div class="row">
-            <p>Please get in touch if you think our work could be mutually beneficial.</p>
-          </div>
-          <div class="row">
-            <div class="info address">
-              <address>555 JavaScript Lane<br /> Portfolio City, FL 55555</address>
+        <div class="content-wrapper">
+          <!-- CONTACT INFO -->
+          <div class="contact-info">
+            <h2>Contact me</h2>
+            <div class="row">
+              <p>Please get in touch if you think our work could be mutually beneficial.</p>
+            </div>
+            <div class="row">
+              <div class="info address">
+                <address>555 JavaScript Lane<br /> Portfolio City, FL 55555</address>
+              </div>
+            </div>
+            <div class="row contact">
+              <div class="info phone">
+                <span class="fa-solid fa-phone fa-lg fa-fw icon"></span> 
+                <address>
+                  <a href="tel:5555555555">(555) 555-5555</a>
+                </address>
+              </div>
+              <div class="info email">
+                <span class="fa-regular fa-envelope fa-lg fa-fw icon"></span> 
+                <address>
+                  <a href="mailto:jane.doe@realemail.com">jane.doe@realemail.com</a>
+                </address>
+              </div>
+            </div>
+            <div class="row">
+              <div class="button-group profile-links">
+                <a href="" target="_blank" class="button profile-link github" aria-label="Jane Doe's GitHub profile">
+                  <span class="fa-brands fa-github icon"></span>
+                  <span class="tooltip bold">GitHub</span>
+                </a>
+                <a href="" target="_blank" class="button profile-link linkedin" aria-label="Jane Doe's LinkedIn profile">
+                  <span class="fa-brands fa-linkedin icon"></span>
+                  <span class="tooltip bold">LinkedIn</span>
+                </a>
+                <a href="" target="_blank" class="button profile-link bluesky" aria-label="Jane Doe's Bluesky profile">
+                  <span class="fa-brands fa-bluesky icon"></span>
+                  <span class="tooltip bold">Bluesky</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="info phone">
-              <span class="fa-solid fa-phone fa-fw"></span> 
-              <address>
-                <a href="tel:5555555555">(555) 555-5555</a>
-              </address>
-            </div>
-            <div class="info email">
-              <span class="fa-regular fa-envelope fa-fw"></span> 
-              <address>
-                <a href="mailto:jane.doe@realemail.com">jane.doe@realemail.com</a>
-              </address>
-            </div>
-          </div>
-          <div class="row">
-            <div class="button-group profile-links">
-              <a href="" target="_blank" class="button profile-link github" aria-label="Jane Doe's GitHub profile">
-                <span class="fa-brands fa-github icon"></span>
-                <span class="tooltip bold">GitHub</span>
-              </a>
-              <a href="" target="_blank" class="button profile-link linkedin" aria-label="Jane Doe's LinkedIn profile">
-                <span class="fa-brands fa-linkedin icon"></span>
-                <span class="tooltip bold">LinkedIn</span>
-              </a>
-              <a href="" target="_blank" class="button profile-link bluesky" aria-label="Jane Doe's Bluesky profile">
-                <span class="fa-brands fa-bluesky icon"></span>
-                <span class="tooltip bold">Bluesky</span>
-              </a>
-            </div>
-          </div>
+          <!-- IMAGE FOR CONTACT SECTION -->
+          <figure>
+            <img src="assets/images/placeholder-image.png" alt="Placeholder image" class="contact-img" />
+          </figure>
         </div>
-        <figure>
-          <img src="assets/images/placeholder-image.png" alt="Placeholder image" class="contact-img" />
-        </figure>
       </section>
     </main>
     <!-- FOOTER -->
