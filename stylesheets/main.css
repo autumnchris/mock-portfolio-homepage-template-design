@@ -186,6 +186,9 @@
 .projects-section .projects .project-tile .project-content .button:hover,
 .projects-section .projects .project-tile .project-content .button:active,
 .projects-section .projects .project-tile .project-content .button:focus {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   position: relative;
 }
 
