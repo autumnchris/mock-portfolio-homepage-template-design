@@ -12,3 +12,7 @@ Inspired by both the [Homepage assignment](https://www.theodinproject.com/lesson
 * [Normalize.css](http://necolas.github.io/normalize.css)
 * [Font Awesome](https://fontawesome.com)
 * [Google Fonts](https://fonts.google.com)
+
+## Demo
+
+View project demo at [https://autumnchris.github.io/mock-portfolio-homepage-template-design](https://autumnchris.github.io/mock-portfolio-homepage-template-design).
